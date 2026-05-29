@@ -1,6 +1,49 @@
-Survey Form
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
 
-Used semantic <form> with proper <label> and for attributes for accessibility
-Used <fieldset> and <legend> to group related radio/checkbox inputs
-Used <select> dropdowns for role and favorite feature
-Used <textarea> for open-ended comments
+    <h1>Survey Form</h1>
+    <p>Let us know how we can improve FreeCodeCamp</p>
+
+    <form>
+
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
+
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+
+        <label>Age</label><br>
+        <input type="number" placeholder="Age"><br><br>
+
+        <label>Which option best describes your current role?</label><br>
+        <select>
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+        </select><br><br>
+
+        <p>How likely is that you would recommend FreeCodeCamp to a friend?</p>
+        <input type="radio" name="recommend"> Definitely<br>
+        <input type="radio" name="recommend"> Maybe<br>
+        <input type="radio" name="recommend"> Not Sure<br><br>
+
+        <p>What do you like most in FCC?</p>
+        <input type="checkbox"> Front-end Projects<br>
+        <input type="checkbox"> Back-end Projects<br>
+        <input type="checkbox"> Data Visualisation<br><br>
+
+        <label>Things that should be improved in the future</label><br>
+        <textarea rows="5" cols="40" placeholder="Enter your comment here..."></textarea><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
