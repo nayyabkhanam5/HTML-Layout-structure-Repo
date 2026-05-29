@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Survey Form</title>
+    <title>Event Registration Form</title>
 </head>
 <body>
 
-    <h1>Survey Form</h1>
+    <h1>Event Registration Form</h1>
+    <p>Please fill out this form to register for the upcoming tech event.</p>
 
     <form>
 
-        <label>Full Name:</label><br>
-        <input type="text"><br><br>
+        <label>Participant Name</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
 
-        <label>Email:</label><br>
-        <input type="email"><br><br>
+        <label>Contact Email</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
 
-        <label>Age:</label><br>
-        <input type="number"><br><br>
+        <label>Phone Number</label><br>
+        <input type="number" placeholder="Enter your phone number"><br><br>
 
-        <label>Gender:</label><br>
+        <label>Select Your Profession</label><br>
+        <select>
+            <option>Choose your profession</option>
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Developer</option>
+            <option>Designer</option>
+        </select><br><br>
 
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female
-        <br><br>
+        <p>How did you hear about this event?</p>
 
-        <label>Skills:</label><br>
+        <input type="radio" name="source"> Social Media<br>
+        <input type="radio" name="source"> Friends<br>
+        <input type="radio" name="source"> Website<br>
+        <input type="radio" name="source"> Advertisement<br><br>
 
-        <input type="checkbox"> HTML
-        <input type="checkbox"> CSS
-        <input type="checkbox"> JavaScript
-        <br><br>
+        <p>Which activities are you interested in?</p>
 
-        <label>Comments:</label><br>
+        <input type="checkbox"> Coding Workshop<br>
+        <input type="checkbox"> Networking Session<br>
+        <input type="checkbox"> Startup Ideas<br>
+        <input type="checkbox"> AI Discussion<br><br>
 
-        <textarea rows="5" cols="30"></textarea>
-        <br><br>
+        <label>Additional Comments</label><br>
 
-        <button type="submit">Submit</button>
+        <textarea rows="5" cols="40" placeholder="Write your comments here..."></textarea><br><br>
+
+        <button type="submit">Register Now</button>
 
     </form>
 
